@@ -15,7 +15,12 @@ public class poo {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+         System.out.println("=================================================");
+          System.out.println("EXEMPLO DE CRIAÇÃO DA CLASSE COM MÉTODO PRINCIPAL MAIN!");        
+          System.out.println("=================================================");   
+            
+        
     }
     
 }

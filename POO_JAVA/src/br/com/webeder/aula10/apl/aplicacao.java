@@ -21,6 +21,13 @@ public class aplicacao {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+            
+          System.out.println("=================================================");
+          System.out.println("EXEMPLO COMPLETO DOS EXERCÍCIOS");        
+          System.out.println("=================================================");   
+            
+            
+            
 		// passa direto os argumentos para o construtor da marca
 		Marca mar = new Marca("Sony","Zona Franca");
 		// passa o objeto direto para o construtor
