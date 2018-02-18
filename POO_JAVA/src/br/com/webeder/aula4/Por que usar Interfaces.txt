@@ -1,0 +1,12 @@
+Iniciando. . .
+
+O uso de interface (não são telas) nos fornece alguns benefícios, os quais não são possíveis quando fazemos o uso de classes abstratas. Você pode se perguntar por que vou usar interface, se ela vai apenas especificar métodos e constantes, poderia defini-los na própria classe. Que benefícios a interface trará que compensará, a criação de outro arquivo? Para responder estas perguntas vamos saber primeiro o que é essa tal de Interface.
+
+O que é interface?
+
+A interface pode ser vista como um contrato no qual uma ou mais classes irá seguir, ou seja, ao implementar uma determinada interface você estará assumindo a responsabilidade de fornecer uma implementação válida, dos métodos(abstractos) que nela foram definidos. A definição dos métodos torna-se opcional quando a classe que implementa a interface é abstract, sendo assim, a primeira classe concreta terá de fornecer implementação dos métodos declarados na interface.
+
+Exemplo da necessidade de interfaces
+
+Temos duas classes abstracta: Eletronico e Computador; considere também a classe Notebook;
+Como faria para criar a classe Notebook já que, ele é Eletronico e ao mesmo tempo é Computador, não teríamos como, pois Java não permite herança múltipla  (o que seria uma solução). Vale ressaltar que a interface, além permitir a implementação desse cenário, tem um papel superior que é definir o contrato esclarecendo o que um objeto implementador deve fazer (não como). Outra vantagem é na Injeção de Dependência.
