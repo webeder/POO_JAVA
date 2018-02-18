@@ -10,33 +10,25 @@ package br.com.webeder.aula2;
  * @author RO
  */
 public class Sobrecarga {
+    
+    
+private double valor;
+
+    public Sobrecarga() {
+    }
+
+
     // TEMOS O MESMO NOME PARA ABOS OS MÉTODOS 
     double somar (double vlr1,double vrl2){
         
-        double res = vlr1 + vrl2;
-        
-        return res;
+        return this.valor =  vlr1 + vrl2;
+     
 }
      // TEMOS O MESMO NOME PARA ABOS OS MÉTODOS 
         double somar (double vlr1,double vrl2, double vlr3){
         
-        double res = vlr1 + vrl2 - vlr3;
-        
-        return res;
-}
-    
-    public static void main(String[] args) {
-        
-System.out.println("=================================================");
-System.out.println("SOBRECARGA DE MÉTODOS");        
-System.out.println("=================================================");     
-        
-        Sobrecarga s = new Sobrecarga();
-        
-   double res =  s.somar(10, 10,10);
-        
-        System.out.println(res);
+        return this.valor = vlr1 + vrl2 - vlr3;
        
-    }
-    
+}
+  
 }

@@ -15,7 +15,7 @@ public class Subescrita {
 System.out.println("=================================================");
 System.out.println("SUBESCRITA DE MÉTODOS");        
 System.out.println("================================================="); 
-         
+
          //aqui eu passo os valores direto no construtor 
          Cliente cli = new Cliente(23, "", "Rosalia", 10);
          
@@ -26,12 +26,7 @@ System.out.println("=================================================");
            c.setCodigoCliente(2299); 
            c.setNome("webeder");
            c.setIdade(10);
-           
-         
-         
-         
-         
-         System.out.println(""+ c.getCodigoCliente());
+System.out.println(""+ c.getCodigoCliente());
          
          System.out.println(""+ c.getTudo()); 
          
