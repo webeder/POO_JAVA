@@ -1,0 +1,71 @@
+Classe(Class)
+Em uma classe java s�o colocados os m�todos(methods) ,fun��es ou procedimentos. Todo o c�digo deve estar em alguma classe, pois quando executamos algum aplicativo java n�s estamos, na verdade, executando uma classe.
+
+Diferentemente de um arquivo fonte que s� pode conter uma classe, uma classe pode conter v�rios m�todos. Em java a classe deve estar em um Arquivo Fonte(Source File) e deve ir com um par de chaves �{}�, s�o nessas chaves que ser�o colocados os m�todos. Lembrando que uma classe sempre inicia com letra mai�scula.
+
+Listagem 1: Exemplo de uma classe contida em um Source File MyClass.java
+
+public class MyClass{   
+// c�digo vai aqui
+}
+M�todos(Methods)
+Os m�todos, fun��es ou procedimentos s�o onde declararemos o c�digo das nossas aplica��es java.
+
+Assim como classes, os m�todos em java devem ser escritos acompanhados de um par de chaves �{}� no final. Lembrando que um m�todo sempre inicia com letra min�scula.
+
+Listagem 2: Exemplo de um m�todo contido em uma Classe
+
+public class MyClass{
+public  void meuMetodo(/*argumentos*/){
+}
+}
+Agora que vimos a estrutura b�sica do c�digo em java, vamos analizar melhor o c�digo e tentar entender o que declaramos quando criamos classes ou m�todos.
+
+Anatomia de uma Classe
+Listagem 3: Anatomia de uma classe em Java
+
+public class MyClass{
+}
+public = Refere-se a visibilidade desta classe. Quando dizemos que uma classe � de visibilidade �public� , estamos dizendo que esta classe poder� ser acessada por outras classes.
+class = Mostramos que estamos criando uma classe.
+MyClass = Refere-se ao nome da classe que estamos criando. Nesse caso , o nome da minha classe ser� �MyClass�.
+{ } = As chaves indicam at� onde certa classe ou m�todo se extende. O c�digo que queremos inserir nesta classe dever� ser escrito dentro do espa�o das chaves.
+Anatomia de uma M�todo
+Listagem 4: Anatomia de um m�todo em Java
+
+public class MyClass{
+public void meuMetodo(/*argumentos*/){
+}
+ }
+public = Do mesmo modo que uma classe, refere-se a visibilidade deste m�todo. Quando dizemos que o m�todo � de visibilidade �public� , estamos dizendo que este m�todo poder� ser acessado por outras classes.
+void = Refere-se ao tipo de retorno que esse m�todo ter�. Nesse caso, como o tipo de retorno � �void�, ou seja , �vazio�, esse m�todo n�o retornar� valor nenhum.
+meuMetodo = Assim como numa classe, refere-se ao nome do m�todo que estamos criando. Nesse caso, o nome do meu m�todo ser� �meuMetodo�.
+(/*argumentos*/ ) = Refere-se aos argumentos que ser�o passados para esse m�todo, sendo opcional. Caso n�o seja necess�rio passar argumentos, simplismente deixar�amos os par�nteses vazios �( ) �. De contr�rio � necess�rio escrever o tipo da vari�vel a ser passada e um nome para essa vari�vel �(int valor)�.
+{ } = As chaves indicam at� onde certa classe ou m�todo se extende. O c�digo que queremos inserir nesta classe dever� ser escrito dentro do espa�o das chaves.
+O M�todo main
+Quando o java virtual machine(JVM) inicia, ele procura na sua classe principal por um m�todo muito espec�fico, chamado de m�todo main.
+
+Uma aplica��o java obrigat�riamente dever� possuir pelo menos uma classe e um m�todo main, pois � por esse m�todo main que o JVM come�ar� a executar. Como o m�todo main � padr�o para qualquer aplica��o java, h� algumas regras que devem ser cumpridas para o funcionamento desse m�todo. Por regra , todo m�todo main dever� ser : P�blico, est�tico , sem retorno(void), com nome de �main�, e dever� receber como argumento um array do tipo String.
+
+Listagem 5: Exemplo de um m�todo main contido em uma Classe
+
+public class MyClass{   
+public static void main(String[] args){
+}
+}
+Anatomia do m�todo main
+Listagem 6: Anatomia do m�todo main
+
+public class MyClass{   
+public static void main(String[] args){
+}
+}
+public = Do mesmo modo que um m�todo comum, refere-se a visibilidade deste m�todo. Quando dizemos que o m�todo � de visibilidade �public� , estamos dizendo que este m�todo poder� ser acessado por outras classes.
+static = Nos garante que somente haver� uma, e n�o mais que uma, refer�ncia para nosso m�todo main, ou seja, todas as inst�ncias da classe ir�o compartilhar a mesma c�pia do m�todo main.
+void = Assim como um m�todo comum, refere-se ao tipo de retorno que esse m�todo ter�. Nesse caso, como o tipo de retorno deve ser �void�, ou seja , �vazio�, esse m�todo n�o retornar� valor nenhum.
+(String[] args ) = Refere-se aos argumentos que ser�o passados para esse m�todo, sendo obrigat�rio no caso do m�todo main
+{} = Assim como um m�todo comum , As chaves indicam at� onde certa classe ou m�todo se estende. O c�digo que queremos inserir neste m�todo dever� ser escrito dentro do espa�o das chaves.
+Fonte: Kathy Sierra , Bert Bates. Head First Java.2nd ed. O�Reilly Media.2005
+
+
+fonte: https://www.devmedia.com.br/entendendo-a-estrutura-de-um-codigo-java/24622 

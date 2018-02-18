@@ -1,0 +1,46 @@
+Regras e convenções de nomenclatura
+Quando programamos em Java, devemos levar em consideração as convenções de nomenclatura para deixar nosso código o mais legível e documentável possível, pois um dos objetivos da programação orientada a objetos é o reaproveitamento do código.
+
+É muito provável que quem não tenha experiência com programação sinta dificuldade de identificar todos os termos utilizados neste artigo, mas garantimos que tudo que será visto aqui será detalhado mais adiante, embora que este artigo se torna trivial a medida que programamos. Portanto, quem já conhece programação em algum outro tipo de linguagem (como Delphi ou C++) aconselhamos que prossiga para a próxima página. Porém, se nunca programou antes, com certeza, este artigo será didático o suficiente para que entenda essas regras.
+
+Muitos compiladores como Eclipse e NetBeans dão um grande auxilio na hora de criarmos nosso projeto nos informando sobre as convenções de nomenclatura no momento que estamos criando os pacotes, classes, etc...
+
+Nome de Classes
+Por convenção, toda classe deve começar com uma letra maiúscula e, de preferência, não pode conter letras não ASCII (caracteres de língua de origem latina, como caracteres acentuados). Portanto, não é possível declarar uma classe com qualquer caracter especial (@, #, $, %, &, *, _, etc...) ou número.
+
+Caso o nome de uma classe seja composto por mais de uma palavra, a primeira letra de cada palavra deve ser em maiúscula.
+
+O nome da classe deve ser exatamente o mesmo nome de seu arquivo fonte ( .java ).
+
+O nome da classe deve fazer referência total ao seu objeto (atributos e métodos contidos dentro da classe). Por exemplo: se tivermos uma classe com os atributos canal, volume e sintonia; e os métodos mudarCanal (), aumentarVolume () e diminuirVolume (); então, possivelmente chamaríamos esta classe de TV ou Televisao. Contudo, em uma classe que contivesse o atributo corDasPenas e o método voar () jamais chamaríamos de Pessoa (por que pessoas não tem penas e nem voam).
+
+Exemplos de nomes de classes: Pessoa, ImpostoDeRenda, Conta, AgenciaDeEmprego, ...
+
+Nome de Pacotes
+Os pacotes devem começar com uma letra minúscula e podem usar letras não ASCII. Jamais poderemos iniciar o nome de um pacote com caracteres especiais (@, #, $, %, &, *, _, etc...) ou número.
+
+Caso o nome de um pacote seja composto por mais de uma palavra, a primeira letra de cada palavra deve ser em maiúscula.
+
+O nome do pacote deve ser o mesmo nome da pasta a qual ele se refere. Por exemplo, se os arquivos fonte estão na pasta criptografia, então o nome do pacote deve ser criptografia.
+
+O nome do pacote deve fazer referência total às funções exercidas pelas classes dentro do pacote, pois pacotes servem basicamente para organizar os arquivos de código fonte de nosso projeto.
+
+Exemplos de nomes de pacotes: criptografia, usuários, conexõesDeBancoDeDados , ...
+
+Nome de atributos ou variáveis
+Os atributos (variáveis) podem começar com qualquer letra e os caracteres $ ou _, porém não podem começar com números.
+
+Caso o nome de um atributo (variável) seja composto por mais de uma palavra, a primeira letra de cada palavra deve ser em maiúscula.
+
+Exemplos de nomes de atributos ou variáveis: x, y, resultado, valorDeX, valorDeY, ligado, ...
+
+Nome de atributos finais ou constantes
+Os atributos finais (constantes) devem ser escritos em letras maiúsculas.
+
+Usamos underline (_) para separar nomes compostos de atributos finais (constantes).
+
+Exemplos de nomes de atributos finais ou constantes: TAMANHO, PARAR_DE_EXECUTAR, ..
+
+
+
+Fonte: http://www.tiexpert.net/programacao/java/nomenclatura.php
