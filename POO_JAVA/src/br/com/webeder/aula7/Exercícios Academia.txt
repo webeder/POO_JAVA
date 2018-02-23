@@ -1,0 +1,8 @@
+Uma academia decidiu disponibilizar os treinos dos alunos em um App e para isso disponibilizou um web services rest  que já foi consumido por um dos membros desenvolvedor de sua equipe usando API GSON do GOOGLE agora é necessário você programar a resposta e mostrar o treino para cada cliente.
+Para cada dia da semana é disponibilizado o treino com suas respectivas letras correspondente exemplo: A, B, C...  Cada aluno tem um treino diferente podendo repetir treinos (Letras) durante a semana
+Exemplo: João treina segunda-feira, quarta-feira e sexta-feira e tem os treinos A e B na sua ficha de treino no cadastro. 
+Crie um algoritmo que alterne os treinos sem que repita a mesma  letra na sequência podendo ter diferentes treinos para cada aluno. Mas lembre-se, o treino é em dias livres o cliente também pode decidir ir à academia em outros dias alternados ou até em todos os dias.   
+OBS. Problema deste algoritmo é de um caso real.
+
+
+Dica: Você pode usar array , laço for e contador 
